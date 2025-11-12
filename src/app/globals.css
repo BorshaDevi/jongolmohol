@@ -122,5 +122,5 @@
 }
 
 .button{
-  @apply bg-yellow-500 text-white border rounded-lg;
+  @apply bg-yellow-400 text-white font-bold p-2 border rounded-lg;
 }
