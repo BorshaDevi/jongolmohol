@@ -1,17 +1,20 @@
+import Link from "next/link";
+
 type product={
     id:number,
     name:string,
+    link:string,
 }
 const AllDepartments=()=>{
     return(
-        <div className="min-h-screen bg-white w-1/2 rounded-sm shadow-md">
+        <div className="min-h-screen  bg-white md:w-1/2 rounded-sm shadow-md">
              <div >
                 <div>
                     <h1 className="header text-xl">All Departments</h1>
                     <div className="p-4 mt-8">
-                        <div className="space-y-2 ">
+                        <div className="md:space-y-2  space-y-4">
                        {products.map(pro=>(
-                        <h1 key={pro.id} className="department">{pro.name}</h1>
+                        <Link href={`/${pro.link}`} key={pro.id}><h1  className="department">{pro.name}</h1></Link>
                        ))}
                     </div>
                     </div>
@@ -25,22 +28,27 @@ export default AllDepartments;
 const products:product[]=[
     {    
         id:1,
-        name:'Fruit & Nut Gits'
+        name:'Fruit & Nut Gits',
+        link:'fruit'
     },
     {    
         id:2,
-        name:'Fresh '
+        name:'Fish ',
+        link:'fish'
     },
     {    
         id:3,
-        name:'Vegetables'
+        name:'Vegetables',
+        link:'vegetables'
     },
     {    
         id:4,
-        name:'Meat'
+        name:'Meat',
+        link:'meat'
     },
     {    
         id:5,
-        name:'Butter & Eggs'
+        name:'Butter & Egg',
+        link:'egg'
     },
 ]

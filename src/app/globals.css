@@ -190,6 +190,6 @@
   @apply bg-orange-500 text-white font-bold p-2 text-center;
 }
 .department{
- @apply hover:bg-green-500 hover:text-center hover:p-1 hover:font-semibold hover:transition hover:duration-1000  hover:ease-in-out text-xl hover:rounded-b-sm hover:text-white
+ @apply hover:bg-green-500 md:hover:text-center md:hover:p-1 hover:font-semibold hover:transition hover:duration-1000  hover:ease-in-out text-xl hover:rounded-b-sm hover:text-white
 }
 
