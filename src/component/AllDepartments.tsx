@@ -9,7 +9,8 @@ const AllDepartments=()=>{
     return(
         <div className="min-h-screen  bg-white md:w-1/2 rounded-sm shadow-md">
              <div >
-                <div>
+                <h1 className="uppercase text-3xl font-bold flex justify-end"><span className="text-green-800">jongol</span><span className="text-orange-500">mohol</span></h1>
+                <div className="mt-5">
                     <h1 className="header text-xl">All Departments</h1>
                     <div className="p-4 mt-8">
                         <div className="md:space-y-2  space-y-4">
