@@ -5,9 +5,8 @@ import Header from "@/component/Header";
 const Navbar=()=>{
     return (
         <div>
-            <div className="flex gap-2 ">  
+            <div className="flex  ">  
                 <Header></Header>
-                
             </div>
         </div>
     )
