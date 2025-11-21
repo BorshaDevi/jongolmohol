@@ -5,9 +5,14 @@ type product = {
     name: string,
     link: string,
 }
-const AllDepartments = () => {
+type props={
+    open:boolean
+}
+    
+const AllDepartments = ({open  }:props) => {
+
     return (
-        <div className="min-h-screen  bg-white md:w-1/2 rounded-sm shadow-md">
+        <div className={`min-h-screen start-0 bg-white md:w-1/2 rounded-sm shadow-md relative md:block  ${open ? "block" : "hidden"}`}>
             <div >
                 <h1 className="uppercase text-3xl font-bold flex justify-end"><span className="text-green-800">jongol</span><span className="text-orange-500">mohol</span></h1>
                 <div className="mt-5">
