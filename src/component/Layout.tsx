@@ -5,12 +5,27 @@ import Header from "@/component/Header";
 const Layout = ({ children }: { children: ReactNode }) => {
     return (
         <div>
-            <div className="flex gap-2">
+            {/* / page ar jono */}
+            <div>
+                <div className="flex justify-around md:justify-normal gap-2 ">
                 <AllDepartments></AllDepartments>
-                <Header></Header>
+                <div>
+                    <Header></Header>
+                    {children}
+                    {/* desktop device */}
+                    <div className="hidden md:block">
+                  <Footer></Footer>
+                    </div>
+                </div>
             </div>
-            {children}
-            <Footer></Footer>
+            {/* mobile device */}
+            <div className="block md:hidden">
+                  <Footer></Footer>
+                    </div>
+            </div>
+
+
+
         </div>
     )
 }
