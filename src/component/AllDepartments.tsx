@@ -1,32 +1,39 @@
 import Link from "next/link";
+import { Sidebar, SidebarContent, SidebarGroup, SidebarGroupContent, SidebarGroupLabel, SidebarMenu, SidebarMenuButton, SidebarMenuItem, SidebarProvider } from "@/components/ui/sidebar"
+import { Plus } from "lucide-react";
+
 
 type product = {
     id: number,
     name: string,
     link: string,
 }
-type props={
-    open:boolean
-}
-    
-const AllDepartments = ({open  }:props) => {
+
+
+const AllDepartments = () => {
 
     return (
-        <div className={`min-h-screen start-0 bg-white md:w-1/2 rounded-sm shadow-md relative md:block  ${open ? "block" : "hidden"}`}>
-            <div >
-                <h1 className="uppercase text-3xl font-bold flex justify-end"><span className="text-green-800">jongol</span><span className="text-orange-500">mohol</span></h1>
-                <div className="mt-5">
-                    <h1 className="header text-xl">All Departments</h1>
-                    <div className="p-4 mt-8">
-                        <div className="md:space-y-2  space-y-4">
-                            {products.map(pro => (
-                                <Link href={`/${pro.link}`} key={pro.id}><h1 className="department">{pro.name}</h1></Link>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+        <div className="md:block hidden">
+            <SidebarProvider>
+                <Sidebar>
+                    <SidebarContent>
+                        <SidebarGroup>
+                            <SidebarGroupLabel>Projects</SidebarGroupLabel>
+                            <SidebarGroupContent>
+                                <SidebarMenu>
+                                    {products.map((product) => (
+                                        <SidebarMenuItem key={product.name}>
+                                            <SidebarMenuButton asChild>
+                                                <span>{product.name}</span>
+                                            </SidebarMenuButton>
+                                        </SidebarMenuItem>
+                                    ))}
+                                </SidebarMenu>
+                            </SidebarGroupContent>
+                        </SidebarGroup>
+                    </SidebarContent>
+                </Sidebar>
+            </SidebarProvider>
         </div>
     )
 }
@@ -58,3 +65,4 @@ const products: product[] = [
         link: 'egg'
     },
 ]
+

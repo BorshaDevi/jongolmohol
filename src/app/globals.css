@@ -112,8 +112,6 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 } */
 
-
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -171,7 +169,6 @@
   }
 }
 
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -182,7 +179,6 @@
   }
 }
 
-
 .button{
   @apply bg-orange-500 text-white font-bold p-2 text-center rounded-lg;
 }
@@ -191,5 +187,27 @@
 }
 .department{
  @apply hover:bg-green-500 md:hover:text-center md:hover:p-1 hover:font-semibold hover:transition hover:duration-1000  hover:ease-in-out text-xl hover:rounded-b-sm hover:text-white
+}
+
+:root {
+  --sidebar: hsl(0 0% 98%);
+  --sidebar-foreground: hsl(240 5.3% 26.1%);
+  --sidebar-primary: hsl(240 5.9% 10%);
+  --sidebar-primary-foreground: hsl(0 0% 98%);
+  --sidebar-accent: hsl(240 4.8% 95.9%);
+  --sidebar-accent-foreground: hsl(240 5.9% 10%);
+  --sidebar-border: hsl(220 13% 91%);
+  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+
+.dark {
+  --sidebar: hsl(240 5.9% 10%);
+  --sidebar-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-primary: hsl(224.3 76.3% 48%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(240 3.7% 15.9%);
+  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-border: hsl(240 3.7% 15.9%);
+  --sidebar-ring: hsl(217.2 91.2% 59.8%);
 }
 
