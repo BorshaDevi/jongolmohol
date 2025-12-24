@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Roboto_Condensed } from "next/font/google";
 import "./globals.css";
-import Layout from "@/component/Layout";
+
+
 import Navbar from "@/component/Navbar";
 
 const robotoCondensed = Roboto_Condensed({
