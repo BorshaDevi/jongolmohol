@@ -4,6 +4,7 @@ import "./globals.css";
 
 
 import Navbar from "@/component/Navbar";
+import Footer from "@/component/Footer";
 
 const robotoCondensed = Roboto_Condensed({
   variable: "--font-roboto-condensed",
@@ -29,12 +30,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${robotoCondensed.variable}  antialiased`}
+        className={`${robotoCondensed.variable}  antialiased bg-[url('https://res.cloudinary.com/dg1okcxsx/image/upload/v1766676139/top-view-raw-fish-placed-ice-surrounded-with-fruit-slices_fw6dwu.jpg')] bg-cover `}
       >
         <Navbar></Navbar>
           {children}
-        
-
+          <Footer></Footer>
       </body>
     </html>
   );
