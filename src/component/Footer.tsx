@@ -6,12 +6,12 @@ import { FcPhone } from "react-icons/fc";
 const Footer=()=>{
     return(
         <div className="">
-              <footer className="bg-white opacity-75 text-black py-5   ">
+              <footer className="bg-white opacity-85  text-black py-5   ">
       <div className="max-w-7xl mx-auto px-2 grid grid-cols-1 md:grid-cols-3 gap-8 ml-20">
 
         {/* Logo & About */}
         <div>
-          <h2 className="text-2xl font-bold uppercase "> <span className="text-green-600">Jong</span><span className="text-orange-600 opacity-75">olm</span><span className="text-orange-700">ohol</span></h2>
+          <h2 className="text-2xl font-bold uppercase "> <span className="text-green-600">Jong</span><span className="text-orange-600 opacity-75">olm</span><span className="text-orange-600 opacity-70">ohol</span></h2>
           <p className="mt-3  leading-relaxed text-xl">
             Your trusted online store for quality products at the best prices.
             Fast delivery, secure payment & 24/7 support.
