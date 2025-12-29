@@ -11,14 +11,15 @@ const Navbar = () => {
     const user = false;
 
     return (
-        <div className="max-w-full h-max">
+        <div className="w-full h-max">
             <div>
                 <div className=" bg-white p-4">
                     <div className="ml-20 mr-10">
                         <div className="flex justify-between items-center">
                             <Link href='/'><h1 className="text-2xl font-bold uppercase "> <span className="text-green-600">Jong</span><span className="text-orange-600 opacity-75">olm</span><span className="text-orange-600 opacity-70">ohol</span></h1></Link>
                             {/* Desktop */}
-                            <div >
+
+                            <div className="md:block hidden" >
                                 <NavigationMenu className="text-xl font-semibold">
                                     <NavigationMenuList >
                                         <NavigationMenuItem>
@@ -54,23 +55,27 @@ const Navbar = () => {
                                     </NavigationMenuList>
                                 </NavigationMenu>
                             </div>
-                            {/* Mobile */}
-                            {user ?
-                                <HoverCard>
-                                    <HoverCardTrigger>
-                                        <Avatar>
-                                            <AvatarFallback className='hover:cursor-pointer'>CN</AvatarFallback>
-                                        </Avatar>
-                                    </HoverCardTrigger>
-                                    <HoverCardContent className="bg-white opacity-85 ">
-                                        <div className="grid grid-cols-1 text-xl hover:cursor-pointer">
-                                            <Link href='/dashboard' >Dashboard</Link>
-                                            <Button className='mt-3 text-xl hover:cursor-pointer'>Logout</Button>
-                                        </div>
-                                    </HoverCardContent>
-                                </HoverCard>
 
-                                : <Link href='/login' className="text-xl text-white font-semibold bg-orange-500 p-2 rounded-md">Join us</Link>}
+                            <div className="md:block hidden">
+                                {user ?
+                                    <HoverCard>
+                                        <HoverCardTrigger>
+                                            <Avatar>
+                                                <AvatarFallback className='hover:cursor-pointer'>CN</AvatarFallback>
+                                            </Avatar>
+                                        </HoverCardTrigger>
+                                        <HoverCardContent className="bg-white opacity-85 ">
+                                            <div className="grid grid-cols-1 text-xl hover:cursor-pointer">
+                                                <Link href='/dashboard' >Dashboard</Link>
+                                                <Button className='mt-3 text-xl hover:cursor-pointer'>Logout</Button>
+                                            </div>
+                                        </HoverCardContent>
+                                    </HoverCard>
+
+                                    : <Link href='/login' className="text-xl text-white font-semibold bg-orange-500 p-2 rounded-md">Join us</Link>}
+                            </div>
+                            {/* mobile */}
+                            
                         </div>
                     </div>
 
