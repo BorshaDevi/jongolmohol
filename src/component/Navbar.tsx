@@ -11,7 +11,7 @@ const Navbar = () => {
     const user = false;
 
     return (
-        <div className="w-full h-max">
+        <div className="w-full h-max shadow-2xl rounded-md">
             <div>
                 <div className=" bg-white p-4">
                     <div className="ml-20 mr-10">

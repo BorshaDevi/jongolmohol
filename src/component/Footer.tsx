@@ -6,7 +6,7 @@ import { FcPhone } from "react-icons/fc";
 const Footer = () => {
   return (
     <div className="">
-      <footer className="bg-white opacity-85  text-black py-5   ">
+      <footer className="bg-white opacity-80  text-black py-5   ">
         <div className="max-w-7xl mx-auto px-2 grid grid-cols-1 md:grid-cols-3 gap-8 ml-20">
 
           {/* Logo & About */}
