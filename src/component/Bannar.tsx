@@ -9,10 +9,10 @@ const Bannar = () => {
           {/* LEFT CONTENT */}
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-              Eat Fresh. Stay Healthy. Live Better.
+              <span className="text-green-800">Eat Fresh. </span ><span className="text-green-700">Stay </span> <span className="text-orange-700"> Healthy.</span> <span className="text-orange-600">Live Better.</span>
             </h1>
 
-            <p className="mt-5 text-gray-600  text-xl">
+            <p className="mt-5 text-black text-xl">
               Daily fresh fish, vegetables, fruits & premium nuts delivered at your doorstep.
             </p>
 
