@@ -7,12 +7,12 @@ import {
 } from "@/components/ui/card"
 const ShopByCategory = () => {
     return (
-        <div className="mt-12 px-4">
-      <h1 className="text-4xl text-center font-bold text-green-800 mb-8">
+        <div className=" px-4 mt-10">
+      <h1 className="text-4xl text-center font-bold text-orange-600 underline-offset-auto underline ">
         Shop By Category
       </h1>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
         {categories.map((cate) => (
           <Card
             key={cate.id}
