@@ -1,5 +1,5 @@
-import Image from "next/image";
 
+import Image from "next/image";
 const Bannar = () => {
   return (
     <div>
@@ -23,6 +23,7 @@ const Bannar = () => {
 
           {/* RIGHT IMAGE */}
           <div className="flex justify-center">
+            
             <Image
               src="https://res.cloudinary.com/dg1okcxsx/image/upload/v1767202374/freepik__talk__35170_yobdbu.jpg"
               alt="Fresh Food"
@@ -31,6 +32,7 @@ const Bannar = () => {
               className="object-contain rounded-md"
               priority
             />
+            
           </div>
         </div>
       </div>

@@ -188,7 +188,9 @@
 .department{
  @apply font-bold text-xl hover:text-white hover:bg-orange-400 hover:shadow
 }
-
+.btn{
+  @apply bg-green-900 text-white rounded-md text-xl font-semibold p-1 mx-20 hover:bg-green-700
+}
 :root {
   --sidebar: hsl(0 0% 98%);
   --sidebar-foreground: hsl(240 5.3% 26.1%);
