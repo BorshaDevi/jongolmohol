@@ -39,7 +39,7 @@ const Navbar = () => {
                                                         <p className="text-gray-500 ">All types of Fish you can get here. </p>
                                                     </Link>
                                                     <Link href='/fruit'>
-                                                        <li className="text-orange-500 hover:underline hover:underline-offset-8"> Fruit</li>
+                                                        <li className="text-orange-500 hover:underline hover:underline-offset-8"> Fruits</li>
                                                         <p className="text-gray-500 ">All types of Fruit you can get here. </p>
                                                     </Link>
                                                     <Link href='/vegetables'>
