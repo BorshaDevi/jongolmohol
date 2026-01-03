@@ -40,7 +40,7 @@ const Discount = () => {
                                 <CardHeader className="text-center p-4">
 
                                     <CardTitle className="text-2xl absolute bg-green-800 bottom-32 left-3 right-0 w-80 text-white font-extrabold rounded-md">
-                                        <span>off on </span> {cate.category}
+                                        <span>off on </span> <span className="uppercase ">{cate.category}</span>
                                     </CardTitle>
 
                                     <button className="btn">
@@ -63,25 +63,25 @@ export default Discount
 const categories = [
     {
         id: 1,
-        category: "Fish",
+        category: "fish",
         discount: 40,
         image: "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg",
     },
     {
         id: 2,
-        category: "Vegetables",
+        category: "vegetables",
         discount: 50,
         image: "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275850/408645018_e4f72981-ae5c-4248-b859-1bce1dd3e773_yqtvab.jpg",
     },
     {
         id: 3,
-        category: "Fruits",
+        category: "fruits",
         discount: 0,
         image: "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275717/colorful-fruits-tasty-fresh-ripe-juicy-white-desk_g9alek.jpg",
     },
     {
         id: 4,
-        category: "Nuts",
+        category: "nuts",
         discount: 10,
         image: "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767201605/pexels-pixabay-38292_ccpzn0.jpg",
     },
