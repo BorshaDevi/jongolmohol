@@ -13,31 +13,34 @@ const Discount = () => {
             </h1>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
-                {categories.filter(cate => cate.discount>0)
-                .map((cate) => (
-                    <div key={cate.id}>
-                       
+                {categories.filter(cate => cate.discount > 0)
+                    .map((cate) => (
+                        <div key={cate.id}>
+
                             <Card
 
                                 className="bg-white relative shadow-md hover:shadow-lg transition rounded-xl overflow-hidden border-none "
                             >
                                 {/* Image */}
-                                    <img
-                                        src={cate.image}
-                                        alt={cate.category}
-                                        className="w-full max-h-44 object-cover p-3 rounded-md"
-                                    />
-                                    <span className="absolute bg-red-600 gap-1 flex font-bold text-white rounded-md w-fit text-xl p-3">
-                                        <span>
-                                            {cate.discount}% 
-                                        </span>
-                                        Save 
+                                <img
+                                    src={cate.image}
+                                    alt={cate.category}
+                                    className="w-full max-h-44 object-cover p-3 rounded-md"
+                                />
+                                <span className="absolute bg-red-600 gap-1 flex font-bold text-white rounded-md w-fit text-xl px-1 py-1">
+                                    <span className="relative -top-1 -left-1 flex size-3">
+                                        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+                                        <span className="relative inline-flex size-3 rounded-full bg-green-600"></span>
                                     </span>
+                                    <span >
+                                        {cate.discount}% Save
+                                    </span>
+                                </span>
                                 {/* Content */}
                                 <CardHeader className="text-center p-4">
 
                                     <CardTitle className="text-2xl absolute bg-green-800 bottom-32 left-3 right-0 w-80 text-white font-extrabold rounded-md">
-                                        <span>off on </span> {cate.category} 
+                                        <span>off on </span> {cate.category}
                                     </CardTitle>
 
                                     <button className="btn">
@@ -46,9 +49,9 @@ const Discount = () => {
                                 </CardHeader>
                             </Card>
 
-                    </div>
+                        </div>
 
-                ))}
+                    ))}
             </div>
         </div>
     )
