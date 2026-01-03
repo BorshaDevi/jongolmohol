@@ -39,7 +39,7 @@ const Discount = () => {
                                 {/* Content */}
                                 <CardHeader className="text-center p-4">
 
-                                    <CardTitle className="text-2xl absolute bg-green-800 bottom-32 left-3 right-0 w-80 text-white font-extrabold rounded-md">
+                                    <CardTitle className="text-2xl text-center absolute bg-green-800 bottom-32 left-9  w-80 text-white font-extrabold rounded-md">
                                         <span>off on </span> <span className="uppercase ">{cate.category}</span>
                                     </CardTitle>
 

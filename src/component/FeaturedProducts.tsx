@@ -1,4 +1,4 @@
-
+'use client'
 import {
     Card,
     CardHeader,
@@ -11,6 +11,8 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import { Rating } from 'react-simple-star-rating'
+import { TbCurrencyTaka } from "react-icons/tb";
 const FeaturedProducts = () => {
     return (
         <div className=" px-4 mt-10">
@@ -19,36 +21,46 @@ const FeaturedProducts = () => {
             </h1>
             <Carousel className="mt-10">
                 <CarouselContent >
-                        {products.map((pro) => (
-                            <CarouselItem key={pro.id} className="md:basis-1/3  ">
-                                <Card
+                    {products.map((pro) => (
+                        <CarouselItem key={pro.id} className="md:basis-1/3  ">
+                            <Card
 
-                                    className="bg-white shadow-md hover:shadow-lg transition rounded-xl overflow-hidden border-none "
-                                >
-                                    {/* Image */}
-                                    <img
-                                        src={pro.image}
-                                        alt={pro.category}
-                                        className="w-full h-44 object-cover p-3 rounded-md"
+                                className="bg-white shadow-md hover:shadow-lg transition rounded-xl overflow-hidden border-none "
+                            >
+                                {/* Image */}
+                                <img
+                                    src={pro.image}
+                                    alt={pro.category}
+                                    className="w-full h-44 object-cover p-3 rounded-md"
+                                />
+
+                                {/* Content */}
+                                <CardHeader className="text-center p-4">
+                                    <CardTitle className="text-2xl font-extrabold text-black">
+                                        {pro.proName}
+                                    </CardTitle>
+                                    <div className="flex text-xl font-semibold">
+                                        <TbCurrencyTaka className="ml-36 mt-1  " />
+                                    <span className="  ">  {pro.price}</span>
+                                    </div>
+                                    <Rating
+                                        initialValue={pro.rate}
+                                        readonly
+                                        size={24}
+                                        fillColor="orange"
+                                        emptyColor="gray"
+                                        SVGstyle={{ display: 'inline-block' }}
                                     />
-
-                                    {/* Content */}
-                                    <CardHeader className="text-center p-4">
-                                        <CardTitle className="text-2xl font-extrabold text-black">
-                                            {pro.proName}
-                                        </CardTitle>
-                                        <p className="text-xl font-semibold">{pro.price}</p>
-                                        <p>rating</p>
-                                        <button className="btn">
-                                            Add to Cart
-                                        </button>
-                                    </CardHeader>
-                                </Card>
-                            </CarouselItem>
-                        ))}
+                                    <button className="btn">
+                                        Add to Cart
+                                    </button>
+                                </CardHeader>
+                            </Card>
+                        </CarouselItem>
+                    ))}
                 </CarouselContent>
-                <CarouselPrevious className="text-orange-800 font-bold" />
-                <CarouselNext className="text-orange-800 font-bold" />
+                <CarouselPrevious className="text-green-800   ml-12" />
+                <CarouselNext className="text-green-800 mr-12" />
             </Carousel>
         </div>
     )
@@ -62,7 +74,7 @@ const products = [
         category: 'fish',
         proName: 'Rui',
         price: 120,
-        rate: 4,
+        rate: 2,
         image: 'https://res.cloudinary.com/dg1okcxsx/image/upload/v1767455691/raw-fresh-fish_vyqrtl.jpg',
     },
     {
@@ -86,7 +98,7 @@ const products = [
         category: 'nuts',
         proName: 'Almond',
         price: 120,
-        rate: 4,
+        rate: 3,
         image: 'https://res.cloudinary.com/dg1okcxsx/image/upload/v1767201605/pexels-pixabay-38292_ccpzn0.jpg',
     },
 
@@ -95,7 +107,7 @@ const products = [
         category: 'fruits',
         proName: 'Organic Mango',
         price: 120,
-        rate: 4,
+        rate: 2,
         image: 'https://res.cloudinary.com/dg1okcxsx/image/upload/v1767455498/delicious-mango-still-life_va6nii.jpg',
     },
 ]
