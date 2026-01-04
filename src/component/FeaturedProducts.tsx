@@ -13,16 +13,18 @@ import {
 } from "@/components/ui/carousel"
 import { Rating } from 'react-simple-star-rating'
 import { TbCurrencyTaka } from "react-icons/tb";
+
 const FeaturedProducts = () => {
     return (
         <div className=" px-4 mt-10">
             <h1 className="text-4xl text-center font-bold text-orange-600 underline-offset-auto underline ">
                 Featured Products
             </h1>
-            <Carousel className="mt-10">
+            <Carousel className="mt-10"
+            >
                 <CarouselContent >
                     {products.map((pro) => (
-                        <CarouselItem key={pro.id} className="md:basis-1/3  ">
+                        <CarouselItem key={pro.id} className="md:basis-1/3">
                             <Card
 
                                 className="bg-white shadow-md hover:shadow-lg transition rounded-xl overflow-hidden border-none "
@@ -41,7 +43,7 @@ const FeaturedProducts = () => {
                                     </CardTitle>
                                     <div className="flex text-xl font-semibold">
                                         <TbCurrencyTaka className="ml-36 mt-1  " />
-                                    <span className="  ">  {pro.price}</span>
+                                        <span className="  ">  {pro.price}</span>
                                     </div>
                                     <Rating
                                         initialValue={pro.rate}
