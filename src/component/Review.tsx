@@ -12,24 +12,24 @@ export default CustomerReview;
 
 
 const reviews=[
-    {
-        userName:'',
-        description:'',
+    {   id:1,
+        userName:'Johan',
+        description:'This is very amazing',
         userImage:''
     },
-    {
-        userName:'',
-        description:'',
+    {   id:2,
+        userName:'Lisa',
+        description:'This is very amazing',
         userImage:''
     },
-    {
+    {   id:3,
         userName:'',
-        description:'',
+        description:'This is very amazing',
         userImage:''
     },
-    {
+    {   id:4,
         userName:'',
-        description:'',
+        description:'This is very amazing',
         userImage:''
     },
 ]
