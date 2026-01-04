@@ -9,3 +9,27 @@ const CustomerReview=()=>{
     )
 }
 export default CustomerReview;
+
+
+const reviews=[
+    {
+        userName:'',
+        description:'',
+        userImage:''
+    },
+    {
+        userName:'',
+        description:'',
+        userImage:''
+    },
+    {
+        userName:'',
+        description:'',
+        userImage:''
+    },
+    {
+        userName:'',
+        description:'',
+        userImage:''
+    },
+]
