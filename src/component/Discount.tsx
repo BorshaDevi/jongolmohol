@@ -14,7 +14,7 @@ import {
 import Autoplay from "embla-carousel-autoplay"
 const Discount = () => {
     return (
-        <div className=" px-4 mt-10">
+        <div className=" ">
             <h1 className="text-4xl text-center font-bold text-orange-600 underline-offset-auto underline ">
                 Discount & offers
             </h1>
