@@ -9,13 +9,13 @@ const AboutUs=()=>{
           <h1 className="text-5xl font-bold text-green-800 mb-4">
             About Us
           </h1>
-          <p className="text-lg text-gray-700 mb-6">
+          <p className=" text-black text-xl mb-6">
             Delivering fresh fish, vegetables, fruits, and nuts directly from trusted sources to your doorstep.
           </p>
 
-          <button className="bg-green-900 text-white rounded-md text-xl font-semibold p-3 hover:bg-green-700">
+          {/* <button className="bg-green-900 text-white rounded-md text-xl font-semibold p-3 hover:bg-green-700">
             Shop Fresh Products
-          </button>
+          </button> */}
         </div>
 
         {/* Image */}

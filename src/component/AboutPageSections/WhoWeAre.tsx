@@ -1,7 +1,7 @@
 const WhoWeAre=()=>{
     return(
         <div>
-          <div className="py-16 px-4 bg-white">
+          <div className="  bg-white opacity-90 py-16 px-4">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
 
         {/* Image */}
@@ -18,10 +18,10 @@ const WhoWeAre=()=>{
           <h2 className="text-4xl font-bold text-green-800 mb-4">
             Who We Are
           </h2>
-          <p className="text-gray-700 text-lg mb-4">
+          <p className="text-black text-lg mb-4">
             We are a dedicated team passionate about delivering fresh and healthy fish, vegetables, fruits, and nuts directly to your doorstep. Our mission is to make quality food accessible, affordable, and convenient for everyone.
           </p>
-          <p className="text-gray-700 text-lg">
+          <p className="text-black text-lg">
             From trusted farms and suppliers to careful packaging and fast delivery, we ensure every product reaches you fresh and safe.
           </p>
         </div>
