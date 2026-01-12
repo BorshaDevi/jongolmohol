@@ -9,7 +9,7 @@ const WhatWeOffer=()=>{
       <div className="max-w-6xl mx-auto text-center">
         
         {/* Section Title */}
-        <h2 className="text-3xl md:text-4xl font-bold text-black">
+        <h2 className="text-3xl md:text-4xl font-bold text-green-800">
           What We Offer
         </h2>
         <p className="mt-4 text-black max-w-2xl mx-auto text-xl">
@@ -22,7 +22,7 @@ const WhatWeOffer=()=>{
           {offers.map((item, index) => (
             <div
               key={index}
-              className="p-6 rounded-2xl bg-gray-50 hover:bg-cyan-100
+              className="p-6 rounded-2xl bg-gray-50 hover:bg-green-100
                          hover:shadow-lg transition duration-300"
             >
               <div className={`text-4xl mb-4 text-center flex justify-center items-center ${item.title==='Fresh Fruits'?'text-rose-300': ''} ${item.title==='Fresh Fish'?'text-blue-300': ''}  ${item.title==='Nuts & Dry Fruits'?'text-orange-900': ''}  ${item.title==='Fresh Vegetables'?'text-green-300': ''}`}>{item.icon}</div>

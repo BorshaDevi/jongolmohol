@@ -49,9 +49,6 @@ const Navbar = () => {
                                                 </ul>
                                             </NavigationMenuContent>
                                         </NavigationMenuItem>
-                                        <NavigationMenuItem>
-                                            <Link href='/blog' className={`text-xl font-semibold hover:underline hover:underline-offset-8 ${pathName === '/blog' ? 'text-orange-500' : 'text-black'}`}><h2>Blog</h2></Link>
-                                        </NavigationMenuItem>
                                     </NavigationMenuList>
                                 </NavigationMenu>
                             </div>
