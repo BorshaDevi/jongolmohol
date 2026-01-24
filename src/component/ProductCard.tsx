@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import toast, { Toaster } from 'react-hot-toast';
+
 
 type ProductCardProps={
     image:string,
@@ -8,7 +10,7 @@ type ProductCardProps={
 }
 const ProductCard=({image,name,price}:ProductCardProps)=>{
     const handleAdd=()=>{
-        
+        toast.success(`${name} is added`)
     }
     return(
          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
@@ -38,6 +40,9 @@ const ProductCard=({image,name,price}:ProductCardProps)=>{
           Add
         </Button>
       </div>
+      <Toaster
+      position="top-center"
+      />
     </div>
     )
 }
