@@ -1,26 +1,31 @@
 import Image from "next/image";
 
-const ShareBanner=()=>{
+type shareBannerTypes={
+    title:string,
+    text:string,
+}
+
+const ShareBanner=({title,text}:shareBannerTypes)=>{
     return(
-       <div className="relative w-full h-[220px] rounded-xl overflow-hidden">
-      {/* Image */}
+         <div className="relative w-full h-[220px] rounded-xl overflow-hidden">
+      {/* Background Image */}
       <Image
-        src="/banner.jpg"   // public/banner.jpg
+        src="/banner.jpg"
         alt="Share Banner"
         fill
         className="object-cover"
       />
 
-      {/* Overlay */}
+      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50" />
 
-      {/* Text Content */}
-      <div className="absolute inset-0 flex flex-col justify-end p-4 text-white">
-        <h2 className="text-xl font-semibold">
-          Share with friends
-        </h2>
-        <p className="text-sm opacity-90">
-          Invite your friends and earn rewards
+      {/* Centered Text */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 text-white">
+        <h1 className="text-2xl font-semibold">
+          {title}
+        </h1>
+        <p className="mt-2  opacity-90 max-w-xs text-xl">
+          {text}
         </p>
       </div>
     </div>
