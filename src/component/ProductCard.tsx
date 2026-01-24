@@ -1,12 +1,15 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 type ProductCardProps={
     image:string,
     name:string,
-    price:number,
-    onAdd?: () => void
+    price:number, 
 }
-const ProductCard=({image,name,price,onAdd}:ProductCardProps)=>{
+const ProductCard=({image,name,price}:ProductCardProps)=>{
+    const handleAdd=()=>{
+        
+    }
     return(
          <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
       {/* Product Image */}
@@ -28,7 +31,7 @@ const ProductCard=({image,name,price,onAdd}:ProductCardProps)=>{
       {/* Add Button */}
       <div className="p-3 pt-0">
         <Button
-          onClick={onAdd}
+          onClick={handleAdd}
           className="w-full"
           size="sm"
         >
