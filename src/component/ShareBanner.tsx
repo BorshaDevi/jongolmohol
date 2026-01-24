@@ -3,14 +3,15 @@ import Image from "next/image";
 type shareBannerTypes={
     title:string,
     text:string,
+    image:string,
 }
 
-const ShareBanner=({title,text}:shareBannerTypes)=>{
+const ShareBanner=({title,text,image}:shareBannerTypes)=>{
     return(
          <div className="relative w-full h-[220px] rounded-xl overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/banner.jpg"
+        src={image}
         alt="Share Banner"
         fill
         className="object-cover"
