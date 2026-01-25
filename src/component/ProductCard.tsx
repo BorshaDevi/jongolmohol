@@ -34,7 +34,7 @@ const ProductCard = ({ image, name, price ,id}: ProductCardProps) => {
             {/* Product Info */}
             <div className="p-3 flex flex-col flex-1">
                 <h3 className="text-2xl font-semibold">{name}</h3>
-                <p className="text-xl text-red-500 mt-1">{price}/kg</p>
+                <p className="text-xl text-red-500 mt-1">{price}/kg...</p>
             </div>
 
             {/* Add Button */}
