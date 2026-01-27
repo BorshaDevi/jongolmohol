@@ -2,62 +2,7 @@
 import ProductCard from "../ProductCard";
 import ShareBanner from "../ShareBanner";
 
-const fishList = [
-    {
-        id: "1",
-        name: "Rui Fish",
-        price: 350,
-        image: "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg",
-    },
-    {
-        id: "2",
-        name: "Katla Fish",
-        price: 400,
-        image: "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg",
-    },
-    {
-        id: "3",
-        name: "Hilsha Fish",
-        price: 900,
-        image: "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg",
-    },
-    {
-        id: "4",
-        name: "Hilsha Fish",
-        price: 900,
-        image: "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg",
-    },
-    {
-        id: "5",
-        name: "Hilsha Fish",
-        price: 900,
-        image: "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg",
-    },
-    {
-        id: "6",
-        name: "Hilsha Fish",
-        price: 900,
-        image: "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg",
-    },
-    {
-        id:" 7",
-        name: "Hilsha Fish",
-        price: 900,
-        image: "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg",
-    },
-    {
-        id: "8",
-        name: "Hilsha Fish",
-        price: 900,
-        image: "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg",
-    },
-    {
-        id: "9",
-        name: "Hilsha Fish",
-        price: 900,
-        image: "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg",
-    },
-]
+
 const Fish = () => {
     return (
         <div>
@@ -79,3 +24,16 @@ const Fish = () => {
     )
 }
 export default Fish;
+const fishList= 
+[
+  { "id": "f1", "name": "Rui Fish", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg", "category": "fish", "price": 350 },
+  { "id": "f2", "name": "Hilsa Fish", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg", "category": "fish", "price": 1200 },
+  { "id": "f3", "name": "Katla Fish", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg", "category": "fish", "price": 420 },
+  { "id": "f4", "name": "Tilapia", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg", "category": "fish", "price": 260 },
+  { "id": "f5", "name": "Pangash Fish", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg", "category": "fish", "price": 220 },
+  { "id": "f6", "name": "Koi Fish", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg", "category": "fish", "price": 300 },
+  { "id": "f7", "name": "Bhetki Fish", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg", "category": "fish", "price": 680 },
+  { "id": "f8", "name": "Shrimp", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg", "category": "fish", "price": 750 },
+  { "id": "f9", "name": "Pomfret", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg", "category": "fish", "price": 900 },
+  { "id": "f10", "name": "Boal Fish", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767275901/fresh-bass-with-white-background_xp9ts1.jpg", "category": "fish", "price": 520 }
+]
