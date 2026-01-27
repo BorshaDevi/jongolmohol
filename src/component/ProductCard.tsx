@@ -1,24 +1,22 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
-
+import toast, { Toaster } from 'react-hot-toast';
 
 
 type ProductCardProps = {
     image: string,
     name: string,
     price: number,
-    id:string,
+    id: string,
 }
-const ProductCard = ({ image, name, price ,id}: ProductCardProps) => {
-    // const handleAdd = () => {
-    //     toast.success(`${name} is added`)
-    // }
-    // <Toaster
-    //             position="top-center"
-    //         />
-    // import toast, { Toaster } from 'react-hot-toast';
+const ProductCard = ({ image, name, price, id }: ProductCardProps) => {
+
+    // add function
+    const handleAdd = (id: string, name: string) => {
+        toast.success(`${name} is added`)
+    }
+
     return (
         <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
             {/* Product Image */}
@@ -40,13 +38,15 @@ const ProductCard = ({ image, name, price ,id}: ProductCardProps) => {
             {/* Add Button */}
             <div className="p-3 pt-0">
                 <Button
-                    asChild
-                    className="bg-green-900 text-white rounded-md text-xl font-semibold p-1 w-full hover:bg-green-700" 
+                    onClick={() => handleAdd(id, name)}
+                    className="bg-green-900 text-white rounded-md text-xl font-semibold p-1 w-full hover:bg-green-700"
                 >
-                    <Link href={`/viewCard/${id}`}>View Card</Link>
+                    Add Card
                 </Button>
             </div>
-            
+            <Toaster
+                position="top-center"
+            />
         </div>
     )
 }
