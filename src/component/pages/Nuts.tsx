@@ -25,13 +25,13 @@ export default Nuts;
 
 const nuts=
 [
-  { "id": "n1", "name": "Almonds", "image": "/images/nuts/almonds.jpg", "category": "nuts", "price": 850 },
-  { "id": "n2", "name": "Cashew Nuts", "image": "/images/nuts/cashew.jpg", "category": "nuts", "price": 900 },
-  { "id": "n3", "name": "Walnuts", "image": "/images/nuts/walnuts.jpg", "category": "nuts", "price": 780 },
-  { "id": "n4", "name": "Pistachio", "image": "/images/nuts/pistachio.jpg", "category": "nuts", "price": 950 },
-  { "id": "n5", "name": "Peanuts", "image": "/images/nuts/peanuts.jpg", "category": "nuts", "price": 280 },
-  { "id": "n6", "name": "Hazelnuts", "image": "/images/nuts/hazelnuts.jpg", "category": "nuts", "price": 820 },
-  { "id": "n7", "name": "Pecan Nuts", "image": "/images/nuts/pecan.jpg", "category": "nuts", "price": 880 },
+  { "id": "n1", "name": "Almonds", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767201605/pexels-pixabay-38292_ccpzn0.jpg", "category": "nuts", "price": 850 },
+  { "id": "n2", "name": "Cashew Nuts", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767201605/pexels-pixabay-38292_ccpzn0.jpg", "category": "nuts", "price": 900 },
+  { "id": "n3", "name": "Walnuts", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767201605/pexels-pixabay-38292_ccpzn0.jpg", "category": "nuts", "price": 780 },
+  { "id": "n4", "name": "Pistachio", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767201605/pexels-pixabay-38292_ccpzn0.jpg", "category": "nuts", "price": 950 },
+  { "id": "n5", "name": "Peanuts", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767201605/pexels-pixabay-38292_ccpzn0.jpg", "category": "nuts", "price": 280 },
+  { "id": "n6", "name": "Hazelnuts", "image": "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767201605/pexels-pixabay-38292_ccpzn0.jpg", "category": "nuts", "price": 820 },
+  { "id": "n7", "name": "Pecan Nuts", "https://res.cloudinary.com/dg1okcxsx/image/upload/v1767201605/pexels-pixabay-38292_ccpzn0.jpg": "/images/nuts/pecan.jpg", "category": "nuts", "price": 880 },
   { "id": "n8", "name": "Macadamia", "image": "/images/nuts/macadamia.jpg", "category": "nuts", "price": 1100 },
   { "id": "n9", "name": "Brazil Nuts", "image": "/images/nuts/brazil.jpg", "category": "nuts", "price": 920 },
   { "id": "n10", "name": "Mixed Dry Nuts", "image": "/images/nuts/mixed.jpg", "category": "nuts", "price": 700 }
